@@ -6,7 +6,7 @@ These work with the pre-processed CSV files for easier use.
 import pandas as pd
 import numpy as np
 from typing import Dict, List, Optional, Union
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import json
 
 

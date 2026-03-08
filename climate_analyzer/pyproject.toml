@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["utils"]
+where = ["src"]
 
 [project.entry-points.'nat.components']
-climate_analyzer = "climate_analyzer.register"
+climate_analyzer = "nat_climate_analyzer.register"

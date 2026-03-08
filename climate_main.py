@@ -5,7 +5,7 @@ import pandas as pd
 
 
 # Imort Climate utilites
-from climate_analyzer.utils.climate_tools_simple import (
+from climate_analyzer.src.climate_tools_simple import (
     load_climate_data,
     calculate_statistics,
     filter_by_country,
@@ -49,6 +49,8 @@ def test_climate_tools():
     print(calculate_statistics.__doc__)
     print(filter_by_country(df, country_name="Canada"))
     print(find_extreme_years(df))
+
+    create_visualization(df, plot_type="monthly_pattern", country="Canada", save_path="global_trend2.png")
 
 
 if __name__ == '__main__':

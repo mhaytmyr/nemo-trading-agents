@@ -12,23 +12,23 @@ llms:
 
 functions:
   list_countries:
-    _type: climate_analyzer/list_countries
+    _type: nat_climate_analyzer/list_countries
     description: "List all available countries in the dataset"
     
   calculate_statistics:
-    _type: climate_analyzer/calculate_statistics
+    _type: nat_climate_analyzer/calculate_statistics
     description: "Calculate temperature statistics globally or for a specific country"
   
   filter_by_country:
-    _type: climate_analyzer/filter_by_country
+    _type: nat_climate_analyzer/filter_by_country
     description: "Get information about climate data for a specific country"
   
   find_extreme_years:
-    _type: climate_analyzer/find_extreme_years
+    _type: nat_climate_analyzer/find_extreme_years
     description: "Find the warmest or coldest years in the dataset"
   
   create_visualization:
-    _type: climate_analyzer/create_visualization
+    _type: nat_climate_analyzer/create_visualization
     description: "Create visualizations including automatic top 5 countries by warming trend (country_comparison plot)"
 
 workflow:
